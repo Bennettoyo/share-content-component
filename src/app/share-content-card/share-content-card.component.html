@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-content>
+    <h1>Share this CV</h1>
+    <div class="share-link-container">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{link}}" target="_blank">
+        <i class="fa-brands fa-facebook"> </i>
+      </a>
+      <a href="https://twitter.com/share?url={{link}}" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?url={{link}}" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:?subject=CV&body={{link}}" target="_blank">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+    <div class="copy-container">
+      or copy link
+      <div>
+        <input [(ngModel)]="link" [disabled]="true" type="text">
+        <button class="btn" (click)="copyText()">{{btnText}}</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

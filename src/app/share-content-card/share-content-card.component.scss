@@ -1,0 +1,68 @@
+:host {
+  width: 38%;
+  height: 34%;
+}
+
+mat-card {
+  height: 100%;
+  width: 100%;
+
+  mat-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .share-link-container {
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .copy-container {
+      display: flex;
+      flex-direction: column;
+
+      input[type="text"] {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        outline: none;
+      }
+
+      input[type="text"]:focus {
+        border-color: #007bff;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: lightgray;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: gray;
+      }
+    }
+  }
+
+  i {
+    font-size: 2rem;
+    background: lightgray;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
